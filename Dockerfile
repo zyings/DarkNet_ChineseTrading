@@ -10,7 +10,7 @@ COPY requirements.txt .
 COPY grafana.sql .
 COPY entrypoints.sh /
 
-RUN pip install  --no-cache-dir -r  /opt/darknet/requirements.txt -i https://mirrors.aliyun.com/pypi/simple/
+RUN pip install  --no-cache-dir -r  /opt/darknet/requirements.txt
 
 
 RUN rm -rf /var/lib/apt/lists/* 
